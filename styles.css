@@ -20,7 +20,7 @@ body{
     font-size: 2.7vw;
     font-family: 'Libre Baskerville', serif;
     font-weight: 500; /* Bold weight */
-    color: #000000;
+    color: #f5e7db;
     text-shadow: 4px 4px 4px #aaa;
     animation: slideInLogo 1.5s ease-in-out;
 
@@ -52,7 +52,7 @@ header{
     margin-left: 3rem;
     justify-content: space-between;
     align-items: center;
-    color: #000000;
+    color: #f5e7db;
     font-weight: 350;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
