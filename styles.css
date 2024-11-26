@@ -75,7 +75,7 @@ section{
 }
 
 .first-section{
-    background-image: url('/images/background.jpg');
+    background-image: url('images/background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     padding: 0 10% 0 10%;
