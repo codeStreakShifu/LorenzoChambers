@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: "Cardo", serif;
+}
+
+body{
+    background-color: whitesmoke;
+    color: #10253a;
+
+}
+
+.logo{
+
+    font-size: 2.7vw;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500; /* Bold weight */
+    color: #000000;
+    text-shadow: 4px 4px 4px #aaa;
+    animation: slideInLogo 1.5s ease-in-out;
+
+}
+
+.logo:hover{
+
+    color: #000000;
+    text-shadow: 2px 2px 4px rgba(82, 10, 0, 0.5);
+
+}
+
+header{
+	position: fixed;
+    top: 0;
+	left: 0;
+	min-width: 100vw;
+	padding: 2rem 10% 2rem 10%;
+	background: rgba(202, 159, 95, 0.4);
+	backdrop-filter: blur(3px);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+    z-index: 5;
+}
+
+.head_links a{
+    font-size: 1.7vw;
+    margin-left: 3rem;
+    justify-content: space-between;
+    align-items: center;
+    color: #000000;
+    font-weight: 350;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+    letter-spacing: 0.1em;
+
+}
+
+.head_links a.active {
+    color: #9c1402; /* Color when active */
+    text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
+}
+
+.head_links a:hover{
+    color: rgb(27, 18, 0);
+    text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
+}
+section{
+    
+    
+}
+
+.first-section{
+    background-image: url('/images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 10% 0 10%;
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.contents{
+    flex: 1;   
+}
+
+.contents:last-child{
+    transform: translate(20%,20%);
+}
+
+.contents .book-img{
+    width: auto;
+    height: 60vh;
+}
+
