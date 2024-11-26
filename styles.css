@@ -88,11 +88,30 @@ section{
 }
 .contents{
     flex: 1;   
+
+    color: whitesmoke;
+}
+
+.contents:first-child{
+    transform: translate(0,30%);
+    font-size: 25px;
+    font-style: italic;
+   letter-spacing: 0.3rem;
+}
+
+.contents:first-child p{
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    transform: translate(35%,40%);
+    text-shadow: 0 0 2px 2px black;
 }
 
 .contents:last-child{
     transform: translate(20%,20%);
 }
+
 
 .contents .book-img{
     width: auto;
