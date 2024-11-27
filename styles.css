@@ -122,3 +122,46 @@ section{
     height: 60vh;
 }
 
+footer {
+    background-color: #472e00;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 1.5rem;
+}
+
+footer a:hover {
+    color: #3498db;
+}
+
+footer .social-icons {
+    margin-top: 10px;
+}
+
+footer .social-icons a {
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-icons a:hover {
+    color: #1da1f2; /* Blue for Twitter */
+}
+
+footer .social-icons .fa-facebook:hover {
+    color: #3b5998; /* Facebook color */
+}
+
+footer .social-icons .fa-youtube:hover {
+    color: #3b20b4; /* YouTube color */
+}
+
