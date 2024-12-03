@@ -128,46 +128,82 @@ section {
 }
 
 footer {
-    background-color: #FFFFFF;
-    color: black;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.4); /* Same as header */
+    backdrop-filter: blur(3px); /* Adds the blur effect */
+    color: #10253a; /* Matching text color to the header theme */
+    padding: 2rem 10%;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-top: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border for separation */
 }
 
-footer p {
-    margin: 10px 0;
+.footer-container {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
 }
 
-footer a {
-    color: black;
-    text-decoration: none;
-    margin: 0 10px;
-    font-size: 1.5rem;
+.footer-info {
+    flex: 1;
+    text-align: left;
 }
 
-footer a:hover {
-    color: #3498db;
+.footer-info p, 
+.footer-info h4 {
+    margin: 0.5rem 0;
+    font-family: 'Cardo', serif;
 }
 
-footer .social-icons {
-    margin-top: 10px;
+.footer-info h4 {
+    font-size: 1.2rem;
+    color: #000000; /* Highlight color for text */
+    font-weight: bold;
 }
 
-footer .social-icons a {
-    color: black;
+.footer-social {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-social p {
+    margin-bottom: 0.5rem;
+    font-family: 'Cardo', serif;
+    font-size: 1.1rem;
+    color: #000000;
+}
+
+.social-icons a {
+    color: #10253a; /* Match the header link colors */
     font-size: 2rem;
-    transition: color 0.3s ease;
+    margin: 0 0.5rem;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
-footer .social-icons a:hover {
-    color: #1da1f2;
+.social-icons a:hover {
+    color: #e49652; /* Matching hover effect from header */
+    transform: scale(1.2);
 }
 
-footer .social-icons .fa-facebook:hover {
-    color: #3b5998;
+footer h4:hover {
+    color: #101e3a; /* Subtle hover color for footer text */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
 }
 
-footer .social-icons .fa-youtube:hover {
-    color: #3b20b4;
-}
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
+    .footer-info, .footer-social {
+        text-align: center;
+    }
+}
