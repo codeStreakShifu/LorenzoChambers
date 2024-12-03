@@ -72,12 +72,12 @@ section {
 
 .first-section {
     position: relative;
-    padding: 0 10% 0 10%;
+    padding: 0 10%; /* Maintain consistent horizontal padding */
     min-width: 100vw;
     min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-between; /* Ensures equal spacing between content */
+    align-items: center; /* Vertically centers the content */
 }
 
 .first-section::before {
@@ -114,15 +114,17 @@ section {
 }
 
 .contents:last-child {
-    transform: translate(20%, 20%);
-    text-shadow: 16px 16px 16px #000000;
     display: flex;
-    justify-content: flex-end; /* Aligns the image to the right */
+    justify-content: flex-end; /* Aligns image to the right */
+    align-items: center; /* Vertically centers the image */
 }
 
 .contents .book-img {
-    width: auto;
-    height: 60vh;
+    width: auto; /* Maintain aspect ratio */
+    height: 60vh; /* Adjust for desired image height */
+    object-fit: contain; /* Ensure the image scales proportionally */
+    margin-left: 15rem; /* Adds spacing from the text content */
+    margin-top: 7rem;
 }
 
 footer {
@@ -168,3 +170,4 @@ footer .social-icons .fa-facebook:hover {
 footer .social-icons .fa-youtube:hover {
     color: #3b20b4;
 }
+
