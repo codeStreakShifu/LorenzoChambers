@@ -20,7 +20,6 @@ body {
     font-weight: 500; /* Bold weight */
     color: #e09e64;
     letter-spacing: .1rem;
-    text-shadow: 4px 4px 4px #000000;
     animation: slideInLogo 1.5s ease-in-out;
 }
 
@@ -30,13 +29,12 @@ body {
 }
 
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     min-width: 100vw;
     padding: 2rem 10% 2rem 10%;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(3px);
+    background: rgba(216, 221, 248, 0.4);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -53,7 +51,6 @@ header {
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
     letter-spacing: 0.1em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .head_links a.active {
@@ -163,7 +160,7 @@ footer {
 
 .footer-info h4 {
     font-size: 1.2rem;
-    color: #000000; /* Highlight color for text */
+    color: #e49652; /* Highlight color for text */
     font-weight: bold;
 }
 
@@ -176,7 +173,7 @@ footer {
     margin-bottom: 0.5rem;
     font-family: 'Cardo', serif;
     font-size: 1.1rem;
-    color: #000000;
+    color: #d3a781;
 }
 
 .social-icons a {

@@ -29,13 +29,12 @@ body {
 }
 
 header {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     min-width: 100vw;
     padding: 2rem 10% 2rem 10%;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(3px);
+    background: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,20 +93,21 @@ header {
 
 .author-image {
     flex: 1;
-    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%; /* Full width within its container */
+    max-width: 400px; /* Maximum width to maintain proportion */
+    aspect-ratio: 1; /* Makes the container square */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Adds a shadow effect */
 }
 
 .author-img {
-    width: 400px;  /* Adjusted to 400px */
-    height: 400px; /* Same height to maintain the square aspect */
-    border-radius: 50%; /* Circular shape */
-    object-fit: cover; /* Ensures the image fits without stretching */
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fits without distortion */
     box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
 }
-
 footer {
     background: rgba(255, 255, 255, 0.4); /* Same as header */
     backdrop-filter: blur(3px); /* Adds the blur effect */
