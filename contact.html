@@ -3,46 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>For the Good  of All & to the Harm  of None</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cardo:ital,wght@0,400;0,700;1,400&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bokor&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header" >
+    <!-- Background Video -->
+    <div class="background-video">
+        <video autoplay muted loop id="video-background">
+            <source src="images/background1.mp4" type="video/mp4">
+        </video>
+    </div>
 
+    <header class="header">
         <a href="#home" data-aos="fade-up" data-aos-duration="1500" class="logo">Lorenzo Chambers</a>
-
         <div id="navbar" class="head_links" data-aos="fade-left" data-aos-duration="1500">
-            <a href="index.html" class="active">Home</a>
+            <a href="index.html">Home</a>
             <a href="author.html">Author</a>
             <a href="book.html">Book</a>
-            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="active">Contact</a>
             <a href="event.html">Events</a>
         </div>
-
-       <!-- <div class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle navigation">
-            &#9776;
-        </div>  Hamburger icon -->
-
     </header>
-    <section>
-        <div class="first-section" data-aos="fade-up" data-aos-duration="100">
-            <div class="contents">
-                <h2 data-aos="fade-right" data-aos-duration="1500"> "Knowing that one day, all of us will leave this planet, how would you like to be
-                    remembered"</h2>
-                    <p data-aos="rotate-left" data-aos-duration="1500">-Lorenzo Alexander Chambers</p>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="contact-info">
+                <p>If you have any questions or inquiries, feel free to reach out!</p>
+                <p>Email: <a href="mailto:MaxAlexander63@gmail.com">MaxAlexander63@gmail.com</a></p>
+                <p>Phone: <a href="tel:+17183092059">718-309-2059</a></p>
             </div>
-            <div class="contents">
-                <img data-aos="slide-up" data-aos-duration="1500" class="book-img" src="images/book-img.png" alt="">
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <form action="mailto:MaxAlexander63@gmail.com" method="POST" enctype="multipart/form-data">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-container">
             <div class="footer-info">
