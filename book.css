@@ -85,7 +85,7 @@ header {
     border-radius: 10px;
 }
 
-/* Book Info Section */
+/* Book Info Section 1 */
 .book-section {
     display: flex;
     justify-content: center;
@@ -153,6 +153,102 @@ header {
     height: auto;
 }
 
+/* Book Info Section 2 */
+.book-section2 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 10%;
+    width: 100vw;
+    height: auto;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.book-content2 {
+    flex: 1;
+    margin-right: 5%;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.book-content2 h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.book-content2 p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.book-image2 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    aspect-ratio: 1;
+}
+
+.book-image2 img {
+    width: 100%;
+    height: auto;
+}
+
+/* Book Info Section 3 */
+.book-section3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 100px 10%;
+    width: 100vw;
+    height: auto;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.book-content3 {
+    flex: 1;
+    margin-right: 5%;
+    padding-right: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.book-content3 h2 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.book-content3 p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.book-image3 {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    aspect-ratio: 1;
+}
+
+.book-image3 img {
+    width: 100%;
+    height: auto;
+}
+
 /* Footer Styles */
 footer {
     background: rgba(255, 255, 255, 0.4);
@@ -168,46 +264,16 @@ footer {
 }
 
 .footer-container {
-    max-width: 1200px;
-    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-}
-
-.footer-info {
-    flex: 1;
-    text-align: left;
-}
-
-.footer-info p,
-.footer-info h4 {
-    margin: 0.5rem 0;
-    font-family: 'Cardo', serif;
-}
-
-.footer-info h4 {
-    font-size: 1.2rem;
-    color: #000000;
-    font-weight: bold;
 }
 
 .footer-social {
-    flex: 1;
-    text-align: right;
-}
-
-.footer-social p {
-    margin-bottom: 0.5rem;
-    font-family: 'Cardo', serif;
-    font-size: 1.1rem;
-    color: #000000;
+    margin-top: 1rem;
 }
 
 .social-icons a {
-    color: #10253a;
     font-size: 2rem;
     margin: 0 10px;
     transition: all 0.3s ease;
@@ -216,3 +282,4 @@ footer {
 .social-icons a:hover {
     color: #e09e64;
 }
+
