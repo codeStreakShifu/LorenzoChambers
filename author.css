@@ -18,6 +18,7 @@ body {
     font-size: 2.7vw;
     font-family: 'Libre Baskerville', serif;
     font-weight: 500;
+    max-width: 30vw;
     color: #e09e64;
     letter-spacing: .1rem;
     animation: slideInLogo 1.5s ease-in-out;
@@ -25,15 +26,14 @@ body {
 
 .logo:hover {
     color: #e49652;
-    text-shadow: 4px 4px 4px #000000;
 }
 
 header {
     position: relative;
     top: 0;
     left: 0;
-    min-width: 100vw;
-    padding: 2rem 10% 2rem 10%;
+    max-width: 100vw;
+    padding: 3vw 8vw 3vw 8vw;
     background: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
@@ -43,13 +43,13 @@ header {
 
 .head_links a {
     font-size: 1.7vw;
-    margin-left: 3rem;
+    margin-left: 2.5vw;
     color: #d3a781;
     font-weight: 350;
     transition: 0.3s ease;
     border-bottom: 3px solid transparent;
     letter-spacing: 0.1em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
 }
 
 .head_links a.active {
@@ -92,7 +92,7 @@ header {
     min-width: 50vw;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1;
-    padding-right: 5rem; /* Additional padding for spacing */
+    padding-right: 2rem; /* Additional padding for spacing */
     overflow-y: auto; /* Allow scrolling if content overflows */
     max-height: 60vh; /* Set a max height so that it doesn't take up too much space */
 }
@@ -108,14 +108,14 @@ header {
 }
 
 .author-content h2 {
-    font-size: 2rem; /* Adjust font size for better visibility */
+    font-size: 2.7rem; /* Adjust font size for better visibility */
     font-weight: bold;
     margin-bottom: 2rem;
 }
 
 .author-content p {
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.3rem;
+    line-height: 1.7;
 }
 
 /* Image Styling (Rectangular) */
