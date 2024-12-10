@@ -88,8 +88,11 @@ header {
 .author-content {
     flex: 1;
     margin-right: 5%;
+    scrollbar-width: none; 
+    text-shadow: 200px 200px 800px rgba(255, 255, 255, 80);
+    color: rgb(255, 255, 255);
     z-index: 1;
-    padding-right: 3rem; /* Additional padding for spacing */
+    padding-right: 2rem; /* Additional padding for spacing */
     overflow-y: auto; /* Allow scrolling if content overflows */
     max-height: 80vh; /* Set a max height so that it doesn't take up too much space */
 }
@@ -99,30 +102,33 @@ header {
     display: none;  /* Hide scrollbar */
 }
 
-/* Firefox */
-.author-content {
-    scrollbar-width: none;  /* Hide scrollbar for Firefox */
-}
+
 
 .author-content h2 {
-    font-size: 3.5rem; /* Adjust font size for better visibility */
+    font-size: 2.5rem; /* Adjust font size for better visibility */
     font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
     margin-bottom: 2rem;
+    
 }
 
 .author-content p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1.8;
+    color: rgb(255, 255, 255);
+    
 }
 
 /* Image Styling (Rectangular) */
 .author-image {
     flex: 1;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
-    max-width: 400px;
-    aspect-ratio: 1;
+    max-width: 300px;
+    align-self: center;
+    aspect-ratio: 9/9;
     z-index: 1;
     margin-left: 3%; /* Additional space to the left */
 }
@@ -130,6 +136,12 @@ header {
 .author-image img {
     width: 100%; /* Ensure the image adjusts to the container */
     height: auto; /* Maintain aspect ratio */
+}
+
+.author-image p{
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 2px;
 }
 
 /* Footer Styles */
