@@ -138,10 +138,11 @@ section {
     margin-top: 7rem;
 }
 
+/* Footer Styles */
 footer {
-    background: rgba(255, 255, 255, 0.4); /* Same as header */
-    backdrop-filter: blur(3px); /* Adds the blur effect */
-    color: #10253a; /* Matching text color to the header theme */
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(3px);
+    color: #10253a;
     padding: 2rem 10%;
     text-align: center;
     display: flex;
@@ -155,55 +156,21 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5rem;
-}
-
-.footer-info {
-    flex: 1;
-    text-align: left;
-}
-
-.footer-info p, 
-.footer-info h4 {
-    margin: 0.5rem 0;
-    font-family: 'Cardo', serif;
-}
-
-.footer-info h4 {
-    font-size: 1.2rem;
-    color: #e49652; /* Highlight color for text */
-    font-weight: bold;
 }
 
 .footer-social {
-    flex: 1;
-    text-align: right;
-}
-
-.footer-social p {
-    margin-bottom: 0.5rem;
-    font-family: 'Cardo', serif;
-    font-size: 1.1rem;
-    color: #d3a781;
+    margin-top: 1rem;
 }
 
 .social-icons a {
-    color: #10253a; /* Match the header link colors */
     font-size: 2rem;
     margin: 0 10px;
     transition: all 0.3s ease;
 }
 
 .social-icons a:hover {
-    color: #e49652; /* Matching hover effect from header */
-    transform: scale(1.2);
+    color: #e09e64;
 }
-
-footer h4:hover {
-    color: #101e3a; /* Subtle hover color for footer text */
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
-}
-
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .contents .book-img {
