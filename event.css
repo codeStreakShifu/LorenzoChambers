@@ -63,6 +63,11 @@ header {
     z-index: 5;
 }
 
+.head_links {
+    display: flex;
+    align-items: center;
+}
+
 .head_links a {
     font-size: 1.7vw;
     margin-left: 3rem;
@@ -82,6 +87,34 @@ header {
 .head_links a:hover {
     color: rgb(27, 18, 0);
     text-shadow: 2px 2px 4px rgba(67, 192, 161, 0.5);
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .head_links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background: rgb(255, 255, 255);
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 10;
+    }
+
+    .head_links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: block;
+    }
 }
 
 /* Events Section */
@@ -167,6 +200,26 @@ footer {
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .events-section {
+        padding: 60px 5%;
+    }
+
+    .events-container h2 {
+        font-size: 2.5rem;
+    }
+
+    .event-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-item {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
 @media screen and (max-width: 768px) {
     header {
         padding: 2rem 5%;
@@ -182,6 +235,34 @@ footer {
 
     .events-container h2 {
         font-size: 2.5rem;
+    }
+
+    .event-images {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .event-item {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .head_links a {
+        font-size: 4vw;
+    }
+
+    .events-section {
+        padding: 40px 5%;
+    }
+
+    .events-container h2 {
+        font-size: 2rem;
     }
 
     .event-images {

@@ -14,12 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// ...existing code...
+document.addEventListener('DOMContentLoaded', () => {
+  const sections = document.querySelectorAll('.book-section, .book-section2, .book-section3, .first-section, .events-section');
   
-  document.addEventListener('DOMContentLoaded', () => {
-    const section = document.querySelector('.book-section3');
-    
-    // Create the video element
+  sections.forEach(section => {
     const video = document.createElement('video');
     video.src = 'images/background1.mp4';  // Path to your video
     video.autoplay = true;
@@ -34,74 +32,6 @@ document.addEventListener('DOMContentLoaded', () => {
     video.style.objectFit = 'cover';
     video.style.zIndex = '-1';  // Place the video behind the content
 
-    // Append the video to the section
     section.appendChild(video);
+  });
 });
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const section = document.querySelector('.book-section2');
-    
-    // Create the video element
-    const video = document.createElement('video');
-    video.src = 'images/background1.mp4';  // Path to your video
-    video.autoplay = true;
-    video.muted = true;
-    video.loop = true;
-    video.playsinline = true;
-    video.style.position = 'absolute';
-    video.style.top = '0';
-    video.style.left = '0';
-    video.style.width = '100%';
-    video.style.height = '100%';
-    video.style.objectFit = 'cover';
-    video.style.zIndex = '-1';  // Place the video behind the content
-
-    // Append the video to the section
-    section.appendChild(video);
-});
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const section = document.querySelector('.book-section');
-    
-    // Create the video element
-    const video = document.createElement('video');
-    video.src = 'images/background1.mp4';  // Path to your video
-    video.autoplay = true;
-    video.muted = true;
-    video.loop = true;
-    video.playsinline = true;
-    video.style.position = 'absolute';
-    video.style.top = '0';
-    video.style.left = '0';
-    video.style.width = '100%';
-    video.style.height = '100%';
-    video.style.objectFit = 'cover';
-    video.style.zIndex = '-1';  // Place the video behind the content
-
-    // Append the video to the section
-    section.appendChild(video);
-});
-
-  document.addEventListener('DOMContentLoaded', () => {
-    const section = document.querySelector('.first-section');
-    
-    // Create the video element
-    const video = document.createElement('video');
-    video.src = 'images/background1.mp4';  // Path to your video
-    video.autoplay = true;
-    video.muted = true;
-    video.loop = true;
-    video.playsinline = true;
-    video.style.position = 'absolute';
-    video.style.top = '0';
-    video.style.left = '0';
-    video.style.width = '100%';
-    video.style.height = '100%';
-    video.style.objectFit = 'cover';
-    video.style.zIndex = '-1';  // Place the video behind the content
-
-    // Append the video to the section
-    section.appendChild(video);
-});
-
-

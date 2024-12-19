@@ -29,6 +29,9 @@
             <a href="contact.html" class="active">Contact</a>
             <a href="event.html">Events</a>
         </div>
+        <div class="hamburger" id="hamburger" aria-expanded="false" aria-label="Toggle navigation">
+            &#9776;
+        </div>
     </header>
 
     <!-- Contact Section -->
@@ -39,19 +42,14 @@
                 <p>Email: <a href="mailto:MaxAlexander63@gmail.com">MaxAlexander63@gmail.com</a></p>
                 <p>Phone: <a href="tel:+17183092059">718-309-2059</a></p>
             </div>
-
-            <!-- Contact Form -->
             <div class="contact-form">
-                <form action="mailto:MaxAlexander63@gmail.com" method="POST" enctype="multipart/form-data">
-                    <label for="name">Your Name:</label>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Name</label>
                     <input type="text" id="name" name="name" required>
-
-                    <label for="email">Your Email:</label>
+                    <label for="email">Email</label>
                     <input type="email" id="email" name="email" required>
-
-                    <label for="message">Your Message:</label>
+                    <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
-
                     <button type="submit">Send Message</button>
                 </form>
             </div>
