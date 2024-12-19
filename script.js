@@ -1,10 +1,21 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-    AOS.init({
-        duration: 600,
-        offset: 100,
-      });
+  AOS.init({
+      duration: 600,
+      offset: 100,
   });
+
+  const hamburger = document.getElementById('hamburger');
+  const navbar = document.getElementById('navbar');
+
+  hamburger.addEventListener('click', () => {
+      const expanded = hamburger.getAttribute('aria-expanded') === 'true' || false;
+      hamburger.setAttribute('aria-expanded', !expanded);
+      navbar.classList.toggle('active');
+  });
+});
+
+// ...existing code...
+  
   document.addEventListener('DOMContentLoaded', () => {
     const section = document.querySelector('.book-section3');
     
@@ -92,3 +103,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Append the video to the section
     section.appendChild(video);
 });
+
+
